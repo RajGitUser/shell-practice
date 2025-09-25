@@ -7,5 +7,5 @@ if [ $NUMBER -lt 10 ]; then
 elif [$NUMBER -eq 10 ]; then
     echo "Given number $NUMBER is Equal to 10"
 else
-    echo "Given number $NUMBER is greater than 10"
+    echo "Given number $NUMBER is greater than or equal to 10"
 fi
