@@ -6,4 +6,4 @@ Y="\e[33m"
 N="\e[0m"
 
 echo -e "$G Hello World" $N
-echo "Happy Dussehra"
+echo -e "$Y Happy Dussehra" $N
