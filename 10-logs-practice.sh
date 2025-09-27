@@ -20,10 +20,10 @@ mkdir -p $LOGS_FOLDER
 
 VALIDATE (){
     if [ $1 -ne 0 ]; then
-        echo -e "ERROR :: Installing $2 is $R Failure $N"
+        echo -e "Installing $2 ... $R FAILURE $N"
         exit 1 # failure is other than 0
     else
-        echo -e "installing $2 is $G SUCCESS $N"
+        echo -e "installing $2 ... $G SUCCESS $N"
     fi
 }
 
