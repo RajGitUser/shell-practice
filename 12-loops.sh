@@ -5,7 +5,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[34m"
 LOGS_FOLDER="/var/log/shell-script"
-SCRIPT_NAME=$( echo $0 | cut -d "." -fi )
+SCRIPT_NAME=$( echo $0 | cut -d "." -f )
 LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log"
 
 USERID=$(id -u)
