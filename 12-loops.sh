@@ -26,9 +26,9 @@ VALIDATE(){
 
 $@
 
-for $package in $@
+for package in $@
 do
-    dnf installed $package &>>$LOG_FILE
+    dnf list installed $package &>>$LOG_FILE
 
     if [ $? -ne 0 ]; then
         dnf install $package -y &>>$LOG_FILE
