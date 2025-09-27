@@ -24,7 +24,7 @@ VALIDATE(){
     fi
 }
 
-$@
+# $@
 
 for package in $@
 do
