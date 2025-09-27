@@ -1,7 +1,7 @@
 #!/bin/bash
 
-G="\e[31m"
-R="\e[32m"
+G="\e[32m"
+R="\e[31m"
 Y="\e[33m"
 N="\e[0m"
 LOGS_FOLDER="/var/log/shell-script"
