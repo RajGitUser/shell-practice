@@ -9,10 +9,10 @@ do
  #GET INSTACE PRIVATE IP
     if [ $i != "frontend" ]; then
         IP=$(aws ec2 describe-instances --instance-ids $INSTANCE_ID --query 'Reservations[0].Instances[0].PrivateIpAddress' --output text)
-        RECORD_NAME="$i.$DOMAIN" # mongodb.anilkathoju.space
+        RECORD_NAME="$i.$DOMAIN" # mongodb.rajkumardaws.space
      else
         IP=$(aws ec2 describe-instances --instance-ids $INSTANCE_ID --query 'Reservations[0].Instances[0].PublicIpAddress' --output text)
-        RECORD_NAME="$DOMAIN" # anilkathoju.space
+        RECORD_NAME="$DOMAIN" # rajkumardaws.space
     fi
  echo "$i: $IP Instance created"
 #Updating records
